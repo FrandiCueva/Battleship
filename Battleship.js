@@ -1,6 +1,6 @@
-var location1 = 2;                                // Variable Declarations
-var location2 = 3;
-var location3 = 4;
+var location1 = 3;                                // Variable Declarations
+var location2 = 4;
+var location3 = 5;
 var guess;
 var hits = 0;
 var guesses = 0;
