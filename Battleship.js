@@ -34,6 +34,14 @@ while (isSunk == false){
   }
  }
 }
-var stats = "You took " + guesses + " guesses to sink the ship " + "which means your shooting accurcacy was " + (3/guesses);
-console.log(stats);
+var stats = "You took " + guesses + " guesses to sink the ship " + "which means your shooting accurcacy was";
+var average = 3/guesses;
+
+if (average == 1){
+console.log(stats,"perfect");
+}
+else {
+console.log(stats, "imprecise");
+}
+
 
