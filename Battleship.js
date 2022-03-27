@@ -1,18 +1,19 @@
-var location1 = 3;                                // Variable Declarations
-var location2 = 4;
-var location3 = 5;
+var randomLoc = Math.floor(Math.random()*5);
+var location1 = randomLoc;                                // Variable Declarations
+var location2 = location1 + 1;
+var location3 = location2 + 1;
 var guess;
 var hits = 0;
 var guesses = 0;
 var isSunk = false;
 
 // ---------Remove the commets syntax to "const prompt" if your are using Node.js--------
-//const prompt = require("prompt-sync")();      // Users input command
+const prompt = require("prompt-sync")();      // Users input command
 
 // Remove /* and */ from both ends to use the corresponding while loop and make sure to apply the commet syntax for the other code!
 //Use this while loop if your are using Node.js other wise use the code below
 
-/*
+
 console.log("Please Enter a Number from 0-6!");
 
 while (isSunk == false){
@@ -47,10 +48,10 @@ console.log(stats,"perfect");
 else {
 console.log(stats, "imprecise");
 }
-*/
 
 // Use this while loop code if you are using a webrowser.
 
+/*
 while(isSunk == false){
    guess = prompt("Fire at will! (Chosose from a number 0-6):");
 
@@ -76,3 +77,4 @@ while(isSunk == false){
 }
 var stats = "You took " +guesses+ " guesses to sink the battleship " + "which means your shooting accuracy is " + (3/guesses);
 alert(stats);
+*/
