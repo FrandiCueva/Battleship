@@ -12,7 +12,22 @@ const prompt = require("prompt-sync")();      // Users input command
 
 // Remove /* and */ from both ends to use the corresponding while loop and make sure to apply the commet syntax for the other code!
 //Use this while loop if your are using Node.js other wise use the code below
-
+ if (randomLoc >= 0 && randomLoc < 1){
+    randomLoc = 0;
+    }
+    else if (randomLoc >= 1 && randomLoc < 2 ){
+    randomLoc = 1;
+    }
+    else if (randomLoc >= 2 && randomLoc < 3){
+       randomLoc = 2;
+    }
+    else if (randomLoc >= 3 && randomLoc < 4){
+      randomLoc = 3;
+    } 
+    else if (randomLoc >= 4 && randomLoc < 5){
+      randomLoc = 4
+    }
+   else {}
 
 console.log("Please Enter a Number from 0-6!");
 
