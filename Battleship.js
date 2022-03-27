@@ -5,10 +5,13 @@ var guess;
 var hits = 0;
 var guesses = 0;
 var isSunk = false;
-const prompt = require("prompt-sync")();      // Users input command
 
-// Remover /* and */ from both ends to use the corresponding while loop!
+// ---------Remove the commets syntax to "const prompt" if your are using Node.js--------
+//const prompt = require("prompt-sync")();      // Users input command
+
+// Remove /* and */ from both ends to use the corresponding while loop and make sure to apply the commet syntax for the other code!
 //Use this while loop if your are using Node.js other wise use the code below
+
 /*
 console.log("Please Enter a Number from 0-6!");
 
