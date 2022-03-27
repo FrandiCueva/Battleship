@@ -8,29 +8,30 @@ var guesses = 0;
 var isSunk = false;
 
 // ---------Remove the commets syntax to "const prompt" if your are using Node.js--------
-const prompt = require("prompt-sync")();      // Users input command
+//const prompt = require("prompt-sync")();      // Users input command
 
-// Remove /* and */ from both ends to use the corresponding while loop and make sure to apply the commet syntax for the other code!
-//Use this while loop if your are using Node.js other wise use the code below
- if (randomLoc >= 0 && randomLoc < 1){
-    randomLoc = 0;
-    }
-    else if (randomLoc >= 1 && randomLoc < 2 ){
-    randomLoc = 1;
-    }
-    else if (randomLoc >= 2 && randomLoc < 3){
-       randomLoc = 2;
-    }
-    else if (randomLoc >= 3 && randomLoc < 4){
-      randomLoc = 3;
-    } 
-    else if (randomLoc >= 4 && randomLoc < 5){
-      randomLoc = 4
-    }
-   else {}
+if (randomLoc >= 0 && randomLoc < 1){
+   randomLoc = 0;
+}
+else if (randomLoc >= 1 && randomLoc < 2 ){
+   randomLoc = 1;
+}
+else if (randomLoc >= 2 && randomLoc < 3){
+   randomLoc = 2;
+}
+else if (randomLoc >= 3 && randomLoc < 4){
+   randomLoc = 3;
+} 
+else if (randomLoc >= 4 && randomLoc < 5){
+   randomLoc = 4
+}
+else {}
 
 console.log("Please Enter a Number from 0-6!");
+// Remove /* and */ from both ends to use the corresponding while loop and make sure to apply the commet syntax for the other code!
+//Use this while loop if your are using Node.js other wise use the code below
 
+/*
 while (isSunk == false){
  guess = prompt("Fire at will: ");
 
@@ -63,10 +64,11 @@ console.log(stats,"perfect");
 else {
 console.log(stats, "imprecise");
 }
+*/
 
 // Use this while loop code if you are using a webrowser.
 
-/*
+
 while(isSunk == false){
    guess = prompt("Fire at will! (Chosose from a number 0-6):");
 
@@ -92,4 +94,4 @@ while(isSunk == false){
 }
 var stats = "You took " +guesses+ " guesses to sink the battleship " + "which means your shooting accuracy is " + (3/guesses);
 alert(stats);
-*/
+
